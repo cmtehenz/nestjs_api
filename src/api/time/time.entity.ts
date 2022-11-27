@@ -13,7 +13,7 @@ export class Time extends BaseEntity {
   public id!: number;
 
   @Column()
-  public user_id: number;
+  public userId: number;
 
   @ManyToOne((type) => User, (times) => Time, { eager: true })
   user: User;

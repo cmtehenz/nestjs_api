@@ -28,6 +28,14 @@ export class RegisterDto {
   @IsString()
   @IsOptional()
   public readonly name?: string;
+
+  /**
+   * O campo role é necessário para saber quais os acessos o usuário vai ter
+   * é um campo obrigatório
+   * @example admin | employee
+   */
+  @IsString()
+  public readonly role: string;
 }
 
 export class LoginDto {

@@ -31,4 +31,13 @@ export class User extends BaseEntity {
 
   @Column({ type: 'timestamp', nullable: true, default: null })
   public lastLoginAt: Date | null;
+
+  constructor(user?: Partial<User>) {
+    super();
+    this.id = user?.id;
+    this.name = user?.name;
+    this.email = user?.email;
+    this.role = user?.role;
+    this.lastLoginAt = user?.lastLoginAt;
+  }
 }
