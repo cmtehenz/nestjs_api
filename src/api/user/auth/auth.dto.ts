@@ -12,9 +12,9 @@ export class RegisterDto {
   public readonly email: string;
 
   /**
-   * É possível conectar com redes sociais sem uma senha, mas para login usando o e-mail diretamente
+   * Senha para fazer o login necessário 8 caracteres
    * é necessário informar uma senha.
-   * @example 123@abc
+   * @example 1234@abc
    */
   @IsString()
   @MinLength(8)
@@ -49,9 +49,9 @@ export class LoginDto {
   public readonly email: string;
 
   /**
-   * É possível conectar com redes sociais sem uma senha, mas para login usando o e-mail diretamente
+   * Senha para fazer o login necessário 8 caracteres
    * é necessário informar uma senha.
-   * @example 123@abc
+   * @example 1234@abc
    */
   @IsString()
   public readonly password: string;
