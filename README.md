@@ -77,5 +77,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 Feito com ❤️ por Gustavo Costa 👋🏽 Entre em contato!
 
- [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/gustavo-a-costa-dev/) 
-[![Gmail Badge](https://img.shields.io/badge/-cmtehenz@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cmtehenz@gmail.com)](mailto:tgmarinho@gmail.com)
+ [![Linkedin Badge](https://img.shields.io/badge/-Gustavo-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gustavo-a-costa-dev/)](https://www.linkedin.com/in/gustavo-a-costa-dev/) 
+[![Gmail Badge](https://img.shields.io/badge/-cmtehenz@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:cmtehenz@gmail.com)](mailto:cmtehenz@gmail.com)
