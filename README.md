@@ -1,10 +1,13 @@
-# Nome do Projeto 
-## Descrição do Projeto
+# Registro de Ponto API
+## Um cliente (Fictício) da Brainny Smart Solutions realizou uma solicitação de desenvolvimento que consiste na implementação de um sistema para o gerenciamento de Registros de Ponto dos colaboradores de uma empresa.
+
+A necessidade é que tenhamos um ambiente WEB administrativo, para o gerenciamento do sistema como um todo e principalmente os registros de horário dos colaboradores e um ambiente WEB, no qual cada colaborador efetuará autenticação e realizará o registro do seu ponto diariamente.
+
 
 Tabela de conteúdos
 =================
 <p align="center">
- <a href="#objetivo">Objetivo</a> •
+ <a href="#Features">Features</a> •
  <a href="#roadmap">Roadmap</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#contribuicao">Contribuição</a> • 
@@ -18,9 +21,19 @@ Tabela de conteúdos
 
 ### Features
 
-- [x] Cadastro de usuário
-- [x] Cadastro de cliente
-- [ ] Cadastro de produtos
+#### Requisitos Funcionais
+- [x] [RF01] - Gerenciar registros de horários;
+- [x] [RF02] - Registrar horário de entrada e saída do colaborador;
+- [x] [RF03] - O usuário com permissão de administrador poderá visualizar em tempo real os registros dos colaboradores, sem a necessidade refresh de página.
+
+
+#### Requisitos Não Funcionais
+- [x] [RNF01] - Apenas os colaboradores podem bater o ponto;
+- [x] [RNF02] - Apenas o administrador do sistema poderá visualizar a lista com os registros dos colaboradores;
+- [x] [RNF03] - O sistema utilizará autenticação com JWT;
+- [x] [RNF04] - Desenvolvimento de API em Node;
+- [x] [RNF05] - As mensagens de retorno da API precisam ser de fácil interpretação pela aplicação cliente;
+
 
 ### Pré-requisitos
 
