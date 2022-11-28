@@ -7,11 +7,10 @@ A necessidade é que tenhamos um ambiente WEB administrativo, para o gerenciamen
 Tabela de conteúdos
 =================
 <p align="center">
- <a href="#Features">Features</a> •
- <a href="#roadmap">Roadmap</a> • 
+ <a href="#Features">Features</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
- <a href="#contribuicao">Contribuição</a> • 
- <a href="#licenc-a">Licença</a> • 
+ <a href="#Documentação">Documentação</a> • 
+ <a href="#licenca">Licença</a> • 
  <a href="#autor">Autor</a>
 </p>
 
@@ -56,15 +55,22 @@ $ npm install
 # Execute a aplicação em modo de desenvolvimento
 $ npm run start:dev
 
-# O servidor inciará na porta:3030 - acesse <http://localhost:3030>
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 ### 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/en/)
+- [Nestjs](https://nestjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [TypeOrm](https://typeorm.io/)
+
+
+### Documentação
+
+A documentação foi feita em Swagger para acessar é necessário iniciar o app ira encontrar em:
+http://localhost:3000/api/
 
 ### Autor
 ---
