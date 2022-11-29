@@ -25,6 +25,7 @@ export class UserController {
   @UseGuards(JwtAuthGuard)
   @UseInterceptors(ClassSerializerInterceptor)
   updateName(@Body() body: UpdateNameDto, @Req() req: Request): Promise<User> {
-    return this.service.updateName(body, req);
+    const user: User = <User>req.user;
+    return this.service.updateName(body, user);
   }
 }

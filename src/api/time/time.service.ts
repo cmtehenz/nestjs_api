@@ -10,7 +10,7 @@ export class TimeService {
   @InjectRepository(Time)
   private readonly repository: Repository<Time>;
 
-  public async registerTime(body: CreateTimeDTO, user: any): Promise<Time> {
+  public async registerTime(body: CreateTimeDTO, user: User): Promise<Time> {
     if (user.role !== 'employee') {
       throw new ForbiddenException(
         `It is necessary be a employee to register time`,
@@ -18,8 +18,6 @@ export class TimeService {
     }
 
     const time_registered = new Date(body.time_registered);
-
-    console.log(user.id);
 
     const newTime = await this.repository.save({
       userId: user.id,
@@ -29,7 +27,7 @@ export class TimeService {
     return newTime;
   }
 
-  public async listAll(user: any): Promise<Time[]> {
+  public async listAll(user: User): Promise<Time[]> {
     if (user.role !== 'admin') {
       throw new ForbiddenException(
         `It is necessary be a admin to list all time`,

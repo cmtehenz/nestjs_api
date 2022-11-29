@@ -35,7 +35,7 @@ export class TimeController {
     @Body() body: CreateTimeDTO,
     @Req() req: Request,
   ): Promise<Time> {
-    const { user } = req;
+    const user: User = <User>req.user;
     return this.service.registerTime(body, user);
   }
 
@@ -43,7 +43,7 @@ export class TimeController {
   @UseGuards(JwtAuthGuard)
   @UseInterceptors(ClassSerializerInterceptor)
   private listAll(@Req() req: Request): Promise<Time[]> {
-    const { user } = req;
+    const user: User = <User>req.user;
     const times = this.service.listAll(user);
     return times;
   }
