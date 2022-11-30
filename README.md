@@ -65,7 +65,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Nestjs](https://nestjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [TypeOrm](https://typeorm.io/)
-
+- [JestJS](https://jestjs.io/pt-BR/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ### Documentação
 
